@@ -57,3 +57,77 @@
 .selected-door {
     height: 59vh;
 }
+
+@media screen and (max-width: 320px) {
+    .selected-door-container {
+        height: 30vh !important;
+        width: 100% !important;
+    }
+    .selected-door {
+        height: 23vh !important;
+    }
+    .all-doors-container {
+        position: relative !important;
+        top: -26rem !important;
+    }
+    .all_doors {
+        margin-top: 1rem !important;
+        width: 100% !important;
+        /* border: solid red; */
+    }
+    .bg-image {
+        background-repeat: no-repeat !important;
+    }
+    .door {
+        height: 15vh !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .selected-door-container {
+        height: 38vh !important;
+    }
+    .selected-door {
+        height: 25vh !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg-image {
+        background-repeat: no-repeat !important;
+    }
+    .selected-door-container {
+        height: 76vh !important;
+    }
+    .selected-door {
+        height: 51vh !important;
+    }
+    .all-doors-container {
+        position: relative !important;
+        top: -8rem !important;
+    }
+    .all_doors {
+        width: 100% !important;
+    }
+    .door {
+        height: 31vh !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .all_doors {
+        width: 100% !important;
+    }
+    .door {
+        height: 40vh !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .all_doors {
+        width: 100% !important;
+    }
+    .door {
+        height: 40vh !important;
+    }
+}
