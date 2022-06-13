@@ -1,46 +1,51 @@
-import starImage from "./images/star.png";
-import greenCircle from "./images/green.png";
-import redCircle from "./images/red.png";
-import blueCircle from "./images/blue.png";
-import yellowCircle from "./images/yellow.png";
 import { useState } from "react";
+import backgroundImage from "./images/bg.png";
+import gate1 from "./images/gate1.jpeg";
+import gate2 from "./images/gate2.jpeg";
+import gate3 from "./images/gate3.jpeg";
+import gate4 from "./images/gate4.jpeg";
 import "./App.css";
 
 function App() {
   // initalizing states
-  const [state, setState] = useState(greenCircle);
+  const [state, setState] = useState(gate3);
 
   return (
     <>
       <div className="container">
-        <img
-          className="circle"
-          src={greenCircle}
-          alt="img"
-          onClick={() => setState(greenCircle)}
-        />
-        <img
-          className="circle"
-          src={redCircle}
-          alt="img"
-          onClick={() => setState(redCircle)}
-        />
-        <img
-          className="circle"
-          src={blueCircle}
-          alt="img"
-          onClick={() => setState(blueCircle)}
-        />
-        <img
-          className="circle"
-          src={yellowCircle}
-          alt="img"
-          onClick={() => setState(yellowCircle)}
-        />
-        <img className="new-circle" src={state} alt="img" />
-
-        <img className="star" src={starImage} alt="img" />
+        <div className="bg-container">
+          <img src={backgroundImage} alt="background_image" className="bg" />
+        </div>
+        <div className="all-doors-container">
+          <div className="all_doors">
+            <img
+              src={gate1}
+              alt="gate1"
+              className="door"
+              onClick={() => setState(gate1)}
+            />
+            <img
+              src={gate2}
+              alt="gate2"
+              className="door"
+              onClick={() => setState(gate2)}
+            />
+            <img
+              src={gate3}
+              alt="gate3"
+              className="door"
+              onClick={() => setState(gate3)}
+            />
+            <img
+              src={gate4}
+              alt="gate4"
+              className="door"
+              onClick={() => setState(gate4)}
+            />
+          </div>
+        </div>
       </div>
+      <img src={state} alt="gate1" className="selected-door" />
     </>
   );
 }
