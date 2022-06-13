@@ -1,5 +1,4 @@
 import { useState } from "react";
-import backgroundImage from "./images/bg.png";
 import gate1 from "./images/gate1.jpeg";
 import gate2 from "./images/gate2.jpeg";
 import gate3 from "./images/gate3.jpeg";
@@ -14,7 +13,10 @@ function App() {
     <>
       <div className="container">
         <div className="bg-container">
-          <img src={backgroundImage} alt="background_image" className="bg" />
+          <div className="selected-door-container">
+            <img src={state} alt="gate1" className="selected-door" />
+          </div>
+          <div className="bg-image"></div>
         </div>
         <div className="all-doors-container">
           <div className="all_doors">
@@ -45,7 +47,6 @@ function App() {
           </div>
         </div>
       </div>
-      <img src={state} alt="gate1" className="selected-door" />
     </>
   );
 }
