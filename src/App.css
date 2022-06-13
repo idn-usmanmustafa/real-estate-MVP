@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    top: 6rem;
+}
+
+.star {
+    width: 35%;
+}
+
+.circle {
+    width: 10%;
+    /* position: relative;
+    left: -19rem;
+    top: -8rem; */
+}
+
+.new-circle {
+    width: 10%;
+    position: relative;
+    left: 27rem;
+    top: -12rem;
+}
